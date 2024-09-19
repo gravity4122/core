@@ -194,7 +194,7 @@
   </sysctl>
   <system>
     <optimization>normal</optimization>
-    <hostname>OPNsense</hostname>
+    <hostname>DevGate</hostname>
     <domain>localdomain</domain>
     <dnsallowoverride>1</dnsallowoverride>
     <group>
@@ -210,13 +210,13 @@
       <descr><![CDATA[System Administrator]]></descr>
       <scope>system</scope>
       <groupname>admins</groupname>
-      <password>$2y$10$YRVoF4SgskIsrXOvOQjGieB9XqHPRra9R7d80B3BZdbY/j21TwBfS</password>
+      <password>$2b$10$E7AhahIOjyYNkYmPRHgeve3ZQnqEoAx8jadbhJGqgZWJCyRmvih9O</password>
       <uid>0</uid>
     </user>
     <nextuid>2000</nextuid>
     <nextgid>2000</nextgid>
-    <timezone>Etc/UTC</timezone>
-    <timeservers>0.opnsense.pool.ntp.org 1.opnsense.pool.ntp.org 2.opnsense.pool.ntp.org 3.opnsense.pool.ntp.org</timeservers>
+    <timezone>Asia/Kolkata</timezone>
+    <timeservers>time.google.com time1.google.com time2.google.com time3.google.com time4.google.com</timeservers>
     <webgui>
       <protocol>https</protocol>
     </webgui>
@@ -323,6 +323,6 @@
     <enable/>
   </rrd>
   <ntpd>
-    <prefer>0.opnsense.pool.ntp.org</prefer>
+    <prefer>time.google.com</prefer>
   </ntpd>
 </opnsense>
