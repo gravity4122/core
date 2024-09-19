@@ -1,6 +1,6 @@
 <acl>
     <page-services-ids>
-        <name>Services: Intrusion Detection</name>
+        <name>Services: Intrusion Prevention</name>
         <patterns>
             <pattern>ui/ids/*</pattern>
             <pattern>api/ids/*</pattern>
