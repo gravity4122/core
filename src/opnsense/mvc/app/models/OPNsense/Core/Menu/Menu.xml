@@ -14,7 +14,7 @@
     <Reporting order="15" cssClass="fa fa-area-chart">
         <Settings order="10" url="/reporting_settings.php" cssClass="fa fa-cog fa-fw"/>
         <Traffic order="20" url="/ui/diagnostics/traffic" cssClass="fa fa-line-chart fa-fw"/>
-        <DNS order="30" VisibleName="Unbound DNS" url="/ui/unbound/overview" cssClass="fa fa-bar-chart fa-fw"/>
+        <DNS order="30" VisibleName="Application Security" url="/ui/unbound/overview" cssClass="fa fa-bar-chart fa-fw"/>
     </Reporting>
     <System order="20" cssClass="fa fa-server">
         <Access cssClass="fa fa-users fa-fw">
@@ -34,9 +34,9 @@
         <Configuration cssClass="fa fa-history fa-fw">
             <Backups url="/diag_backup.php"/>
             <Defaults url="/diag_defaults.php"/>
-            <History url="/ui/core/backup/history/this"/>
+            <!-- <History url="/ui/core/backup/history/this"/> -->
         </Configuration>
-        <Firmware cssClass="fa fa-building-o fa-fw">
+        <!-- <Firmware cssClass="fa fa-building-o fa-fw">
             <Status order="10" url="/ui/core/firmware#status"/>
             <Settings order="20" url="/ui/core/firmware#settings"/>
             <Changelog order="30" url="/ui/core/firmware#changelog"/>
@@ -45,7 +45,7 @@
             <Packages order="60" url="/ui/core/firmware#packages"/>
             <Reporter order="70" url="/crash_reporter.php"/>
             <LogFile order="80" VisibleName="Log File" url="/ui/diagnostics/log/core/pkg"/>
-        </Firmware>
+        </Firmware> -->
         <Gateways cssClass="fa fa-location-arrow fa-fw">
             <Configuration order="10" url="/ui/routing/configuration"/>
             <Group order="20" url="/system_gateway_groups.php">
@@ -81,7 +81,7 @@
         <Wizard url="/wizard.php?xml=system" cssClass="fa fa-magic fa-fw"/>
         <LogFiles order="150" VisibleName="Log Files" cssClass="fa fa-eye fa-fw">
             <Audit url="/ui/diagnostics/log/core/audit"/>
-            <Backend url="/ui/diagnostics/log/core/configd"/>
+            <!-- <Backend url="/ui/diagnostics/log/core/configd"/> -->
             <Boot url="/ui/diagnostics/log/core/boot"/>
             <General url="/ui/diagnostics/log/core/system"/>
             <WebGUI VisibleName="Web GUI" url="/ui/diagnostics/log/core/lighttpd"/>
@@ -161,11 +161,11 @@
         </LogFiles>
     </Firewall>
     <Services order="60" cssClass="fa fa-cog">
-        <ISC_DHCPv4 VisibleName="ISC DHCPv4" cssClass="fa fa-bullseye fa-fw">
+        <ISC_DHCPv4 VisibleName="DHCPv4" cssClass="fa fa-bullseye fa-fw">
             <Leases order="300" url="/ui/dhcpv4/leases"/>
             <LogFile VisibleName="Log File" order="400" url="/ui/diagnostics/log/core/dhcpd"/>
         </ISC_DHCPv4>
-        <ISC_DHCPv6 VisibleName="ISC DHCPv6" cssClass="fa fa-bullseye fa-fw">
+        <ISC_DHCPv6 VisibleName="DHCPv6" cssClass="fa fa-bullseye fa-fw">
             <Leases order="400" url="/ui/dhcpv6/leases"/>
         </ISC_DHCPv6>
         <OpenDNS VisibleName="OpenDNS" url="/services_opendns.php" cssClass="fa fa-tags fa-fw"/>
@@ -194,8 +194,8 @@
         <PowerOff VisibleName="Power Off" order="20" url="/ui/core/halt" cssClass="fa fa-power-off fa-fw"/>
     </Power>
     <Help order="80" cssClass="fa fa-support">
-        <Documentation order="10" url="https://docs.opnsense.org/" cssClass="fa fa-book" IsExternal="Y"/>
-        <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/>
-        <Support VisibleName="Commercial Support" order="30" url="https://opnsense.org/support-overview/commercial-support/" cssClass="fa fa-phone" IsExternal="Y"/>
+        <!-- <Documentation order="10" url="https://docs.opnsense.org/" cssClass="fa fa-book" IsExternal="Y"/> -->
+        <!-- <Forum VisibleName="User Forum" order="20" url="https://forum.opnsense.org/" cssClass="fa fa-ticket" IsExternal="Y"/> -->
+        <Support VisibleName="Commercial Support" order="30" url="https://www.devray.in/" cssClass="fa fa-phone" IsExternal="Y"/>
     </Help>
 </menu>
