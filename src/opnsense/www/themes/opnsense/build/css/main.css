@@ -6423,7 +6423,8 @@ button.close {
 }
 
 .pull-right {
-  float: right !important;
+  /* float: right !important; */
+  width: 100%;
 }
 
 .pull-left {
