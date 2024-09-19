@@ -73,6 +73,9 @@ $aclObj = new \OPNsense\Core\ACL();
               </div>
             </form>
           </li>
+          <a href="/index.php?logout" class="logout-button">
+            <i class="fa fa-sign-out" style="font-size:28px;"></i>
+          </a>
         </ul>
       </div>
     </div>
