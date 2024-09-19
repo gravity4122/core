@@ -5,8 +5,8 @@ $product = product::getInstance();
 ?>
       <footer class="page-foot">
         <div class="container-fluid">
-          <a target="_blank" href="<?= $product->website() ?>"><?= $product->name() ?></a> (c) <?= $product->copyright_years() ?>
-          <a target="_blank" href="<?= $product->copyright_url() ?>"><?= $product->copyright_owner() ?></a>
+            <a target="_blank" href="https://www.devray.in/">DevGate</a> <span id="copyright"></span> Developed and Maintained by 
+            <a target="_blank" href="https://www.maplecloudtechnologies.com/">MapleCloud Technologies</a>
         </div>
       </footer>
 
@@ -97,6 +97,15 @@ $product = product::getInstance();
           });
         });
       });
+    </script>
+    <script>
+      function updateCopyright() {
+        var currentYear = new Date().getFullYear();
+        var twoYearsBefore = currentYear - 6;
+        document.getElementById('copyright').innerText = '(c) ' + twoYearsBefore + ' - ' + currentYear;
+        }
+      updateCopyright();
+      setInterval(updateCopyright, 1000);
     </script>
   </body>
 </html>
