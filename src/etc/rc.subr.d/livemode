@@ -61,7 +61,7 @@ if (is_install_media()) {
         /* tailored for OPNsense to occupy same width below */
         $namex = product::getInstance()->name();
 
-        $greeting = "Welcome!  {$namex} is running in live mode from install media.  Please\n" .
+        $greeting = "Welcome! DevGate is running in live mode from install media.  Please\n" .
                     "login as 'root' to continue in live mode, or as 'installer' to start the\n" .
                     "installation.  Use the default or previously-imported root password for\n" .
                     "both accounts.";
