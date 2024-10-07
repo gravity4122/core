@@ -424,7 +424,7 @@ function display_login_form($Login_Error)
           </div>
 
       </main>
-      <div class="login-foot text-center">>
+      <div class="login-foot text-center">
         <a target="_blank" href="https://www.devray.in/">DevGate</a> <span id="copyright"></span> Developed and Maintained by 
         <a target="_blank" href="https://www.maplecloudtechnologies.com/">MapleCloud Technologies</a>
       </div>
